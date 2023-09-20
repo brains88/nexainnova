@@ -1,4 +1,26 @@
 //smooth scroll functionality
+let contactSection = document.querySelector("#contact");
+let getInTouch = document.querySelector(".btn-started");
+let getInTouchMobile = document.querySelector(".btn-start");
+
+function scrollToContact(e) {
+  // e.preventDefault();
+  e.scrollIntoView({
+    behavior: "smooth",
+  });
+}
+getInTouch.addEventListener("click", function () {
+  console.log("hello");
+  scrollToContact(contactSection);
+});
+
+getInTouchMobile.addEventListener("click", function () {
+  console.log("hello");
+  scrollToContact(contactSection);
+});
+// getInTouchMobile.addEventListener("click", scrollToContact(contactSection));
+
+//smooth scroll functionality
 let parent = document.querySelector(".nav");
 let children = document.querySelectorAll(".link");
 
@@ -73,18 +95,6 @@ linkx[2].addEventListener("mouseover", function () {
   layerx(layer3, hover[2]);
 });
 
-linkx[3].addEventListener("mouseover", function () {
-  layerx(layer4, hover[3]);
-});
-
-linkx[4].addEventListener("mouseover", function () {
-  layerx(layer5, hover[4]);
-});
-
-linkx[5].addEventListener("mouseover", function () {
-  layerx(layer6, hover[5]);
-});
-
 function hoverOff(layer, hovering) {
   layer.style.display = "none";
   hovering.classList.remove("studenthover");
@@ -100,18 +110,6 @@ linkx[1].addEventListener("mouseout", function () {
 
 linkx[2].addEventListener("mouseout", function () {
   hoverOff(layer3, hover[2]);
-});
-
-linkx[3].addEventListener("mouseout", function () {
-  hoverOff(layer4, hover[3]);
-});
-
-linkx[4].addEventListener("mouseout", function () {
-  hoverOff(layer5, hover[4]);
-});
-
-linkx[5].addEventListener("mouseout", function () {
-  hoverOff(layer6, hover[5]);
 });
 
 //text reveal onscroll functionality

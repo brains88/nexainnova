@@ -798,6 +798,10 @@ video {
   width: 97%;
 }
 
+.w-\[99\%\] {
+  width: 99%;
+}
+
 .w-\[full\] {
   width: full;
 }
@@ -810,16 +814,8 @@ video {
   width: 95%;
 }
 
-.w-\[88\%\] {
-  width: 88%;
-}
-
-.w-\[86\%\] {
-  width: 86%;
-}
-
-.w-\[87\%\] {
-  width: 87%;
+.w-\[93\%\] {
+  width: 93%;
 }
 
 .cursor-pointer {
@@ -1040,6 +1036,14 @@ video {
 
 .pl-\[\.5rem\] {
   padding-left: .5rem;
+}
+
+.pl-\[1\.2rem\] {
+  padding-left: 1.2rem;
+}
+
+.pr-\[1\.2rem\] {
+  padding-right: 1.2rem;
 }
 
 .text-center {
