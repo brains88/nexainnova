@@ -4,7 +4,6 @@ let getInTouch = document.querySelector(".btn-started");
 let getInTouchMobile = document.querySelector(".btn-start");
 
 function scrollToContact(e) {
-  // e.preventDefault();
   e.scrollIntoView({
     behavior: "smooth",
   });
@@ -18,7 +17,7 @@ getInTouchMobile.addEventListener("click", function () {
   console.log("hello");
   scrollToContact(contactSection);
 });
-// getInTouchMobile.addEventListener("click", scrollToContact(contactSection));
+
 
 //smooth scroll functionality
 let parent = document.querySelector(".nav");
